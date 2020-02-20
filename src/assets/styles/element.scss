@@ -1,0 +1,22 @@
+//列表的样式
+@mixin list($direction:column) {
+  @include flex($direction)
+}
+
+// 面板的样式
+@mixin panel($bgc-color:#fff,$padding:0,$margin:50px 0 0,$height:50px,$fontSize:28px,
+  $color:$font-size-lg,$fontweight:$font-weight-base) {
+  background: $bgc-color;
+  padding: $padding;
+  margin: $margin;
+  > h2 {
+    font-size: $fontSize;
+    color: $color;
+    font-weight: $fontweight;
+    height: $height;
+    line-height: $height;
+    text-align: left;
+    @include ellipsis;
+  }
+
+}
