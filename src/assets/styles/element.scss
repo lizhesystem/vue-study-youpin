@@ -9,14 +9,5 @@
   background: $bgc-color;
   padding: $padding;
   margin: $margin;
-  > h2 {
-    font-size: $fontSize;
-    color: $color;
-    font-weight: $fontweight;
-    height: $height;
-    line-height: $height;
-    text-align: left;
-    @include ellipsis;
-  }
 
 }

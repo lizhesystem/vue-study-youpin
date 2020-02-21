@@ -1,8 +1,7 @@
 <!--公共面板组件-->
 <template>
     <section :class="[panelStyle,cname]">
-        <h2>{{ title }}</h2>
-
+        <solt></solt>
     </section>
 </template>
 
@@ -23,6 +22,6 @@
     }
 </script>
 
-<style scoped lang="scss">
+<style module lang="scss">
 
 </style>

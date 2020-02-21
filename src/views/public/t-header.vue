@@ -21,7 +21,7 @@
                      v-on:mouseout="mouseLeave">
                     <span>资质证照 / 协议规则</span>
                     <span class="d-icons"></span>
-                    <div :class="['nav',active]">
+                    <div :class="['nav',active,'animated fadeIn']">
                         <ul>
                             <li>资质证照</li>
                             <li>协议规则</li>
@@ -35,10 +35,10 @@
 
 <script>
     export default {
-        name: 'headerTop',
+        name: 't-header',
         data() {
             return {
-                active: '',
+                active: 'hide',
             }
         },
         methods: {
@@ -53,14 +53,13 @@
 </script>
 
 <style scoped lang="scss">
-    @import "../../assets/styles/common";
-
     header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 100;
+        /*position: fixed;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*z-index: 100;*/
+        width: 100%;
         font-size: 14px;
         color: #e7e7e7;
         height: 48px;
@@ -68,7 +67,7 @@
         background: #333;
 
         aside {
-            width: 1080px;
+            width: $style-width;
             margin: 0 auto;
 
 
@@ -123,7 +122,6 @@
                             position: absolute;
                             right: -23px;
                             box-shadow: 0 3px 28px rgba(0, 0, 0, .1);
-                            transition: all .3s cubic-bezier(0, 1, .5, 1);
                             /*display: none;*/
                             li {
                                 height: 35px;
