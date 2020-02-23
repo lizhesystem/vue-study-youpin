@@ -4,10 +4,21 @@
 }
 
 // 面板的样式
-@mixin panel($bgc-color:#fff,$padding:0,$margin:50px 0 0,$height:50px,$fontSize:28px,
-  $color:$font-size-lg,$fontweight:$font-weight-base) {
+@mixin panel($width:1080px,$bgc-color:#fff,$padding:0,$fontSize:28px,
+  $color:#333) {
   background: $bgc-color;
   padding: $padding;
-  margin: $margin;
-
+  margin: 0 auto;
+  width: $width;
+  color: $color;
+  > h4 {
+    font-size: $fontSize;
+    font-weight: 400;
+    
+    > span {
+      margin-left: 12px;
+      font-size: 14px;
+      color: #999;
+    }
+  }
 }

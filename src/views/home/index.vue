@@ -1,17 +1,23 @@
 <template>
     <div>
-        <T-header/>
-        <S-heafer/>
+        <THeader/>
+        <SHeafer/>
+        <SwiperContainer/>
+        <raise/>
+        <BFooter/>
     </div>
 </template>
 
 <script>
     import THeader from "../public/t-header";
     import SHeafer from "../public/s-heafer";
+    import BFooter from "../public/b-footer"
+    import SwiperContainer from "./swiper-container";
+    import Raise from "./raise";
 
     export default {
         name: 'index',
-        components: {SHeafer, THeader},
+        components: {Raise, SwiperContainer, SHeafer, THeader, BFooter},
         data() {
             return {}
         }

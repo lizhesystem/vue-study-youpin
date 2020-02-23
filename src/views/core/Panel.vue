@@ -1,7 +1,8 @@
 <!--公共面板组件-->
 <template>
     <section :class="[panelStyle,cname]">
-        <solt></solt>
+        <h4>{{ title }} <span>{{ sub }}</span></h4>
+        <slot></slot>
     </section>
 </template>
 
@@ -11,6 +12,15 @@
         props: {
             title: {
                 type: String,
+                default: ""
+
+            },
+            sub: {
+                type: String,
+                default: ""
+            },
+            cname: {
+                tyep: String,
                 default: ""
             }
         },
@@ -22,6 +32,11 @@
     }
 </script>
 
-<style module lang="scss">
+<style scoped lang="scss">
+    @import "../../assets/styles/element";
+
+    .panel {
+        @include panel;
+    }
 
 </style>

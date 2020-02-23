@@ -17,8 +17,8 @@
                 </div>
                 <span></span>
                 <div class="item"
-                     v-on:mouseover="mouseOver"
-                     v-on:mouseout="mouseLeave">
+                     @mouseover="mouseOver"
+                     @mouseout="mouseLeave">
                     <span>资质证照 / 协议规则</span>
                     <span class="d-icons"></span>
                     <div :class="['nav',active,'animated fadeIn']">
