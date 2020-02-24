@@ -9,14 +9,13 @@
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>
 
-
         </swiper>
 
     </section>
 </template>
 
 <script>
-    import { swiper, swiperSlide } from 'vue-awesome-swiper'
+    import {swiper, swiperSlide} from 'vue-awesome-swiper'
     // require styles
     import 'swiper/dist/css/swiper.css'
 
@@ -34,27 +33,11 @@
                     return []
                 }
             },
-            // 轮播图默认属性
+            // 轮播图属性
             options: {
                 type: Object,
                 default() {
-                    return {
-                        slidesPerView: 1,
-                        spaceBetween: 30,
-                        loop: true,
-                        autoplay: {
-                            delay: 2500,
-                            disableOnInteraction: false
-                        },
-                        pagination: {
-                            el: '.swiper-pagination',
-                            clickable: true
-                        },
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev'
-                        }
-                    }
+                    return {}
                 }
             }
 
@@ -78,7 +61,7 @@
 
     .swiper-button-next {
         background-image: url("https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png");
-        background-position: 0 -1840px;
+        background-position: 0 -1837px;
         background-size: auto;
         width: 45px;
     }
@@ -91,7 +74,7 @@
         border: 1px solid #cecece;
     }
 
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
         box-shadow: 0 0 0 4px #ccc;
         background: #a7936e;
         border-radius: 500px;

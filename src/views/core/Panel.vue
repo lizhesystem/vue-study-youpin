@@ -20,7 +20,7 @@
                 default: ""
             },
             cname: {
-                tyep: String,
+                type: String,
                 default: ""
             }
         },

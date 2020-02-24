@@ -97,13 +97,10 @@
 }
 
 //多行超出省略号
-@mixin ellipsis($line: 2, $line-height: 1.2) {
+@mixin ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: $line;
-  line-height: $line-height;
+  white-space: nowrap;
 }
 
 @mixin modalbg($color-bg: rgba(0, 0, 0, 0.2)) {

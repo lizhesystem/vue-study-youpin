@@ -3,7 +3,10 @@
         <THeader/>
         <SHeafer/>
         <SwiperContainer/>
-        <raise/>
+        <Raise/>
+        <Limted/>
+        <Day/>
+        <Push/>
         <BFooter/>
     </div>
 </template>
@@ -14,10 +17,13 @@
     import BFooter from "../public/b-footer"
     import SwiperContainer from "./swiper-container";
     import Raise from "./raise";
+    import Limted from "./limted";
+    import Day from "./day";
+    import Push from './push'
 
     export default {
         name: 'index',
-        components: {Raise, SwiperContainer, SHeafer, THeader, BFooter},
+        components: {Push,Day, Limted, Raise, SwiperContainer, SHeafer, THeader, BFooter},
         data() {
             return {}
         }

@@ -17,7 +17,9 @@
     #app {
         font-size: $font-size-base;
         color: $color-common;
-        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "SF UI Text",
-        "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+        /*font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "SF UI Text",*/
+        /*"Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;*/
+
+        font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     }
 </style>

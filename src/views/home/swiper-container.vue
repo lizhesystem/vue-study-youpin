@@ -27,7 +27,7 @@
                 </div>
             </div>
             <!--轮播图-->
-            <Slider :class="$style.slider" :items="items"></Slider>
+            <Slider :options="options" :class="$style.slider" :items="items"></Slider>
         </div>
         <!--五宫格-->
         <section :class="$style.box">
@@ -323,7 +323,24 @@
                         title: '小米自营',
                         src: 'https://img.youpin.mi-img.com/jianyu/f232f1640b3bb2b47e32d82da35d5a04.png?w=126&h=126'
                     }
-                ]
+                ],
+                options: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+                }
             }
         },
         methods: {
@@ -396,6 +413,7 @@
                 width: 859px;
                 border-top: 1px solid #ccc;
                 border-bottom: 1px solid #ccc;
+
                 .detailgroup {
                     h4 {
                         color: #333;
@@ -446,11 +464,14 @@
         }
     }
 
+    /*五宫格*/
     .box {
         width: 1080px;
         margin: 50px auto 0;
         @include flex(row);
         justify-content: space-between;
+        border-bottom: 1px solid #e7e7e7;
+        margin-bottom: 40px;
 
         .wrap {
             width: 130px;
